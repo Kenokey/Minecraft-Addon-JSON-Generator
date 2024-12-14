@@ -1,0 +1,47 @@
+{
+	"format_version": "{formatVersion}",
+	"minecraft:item": {
+		"description": {
+			"identifier": "{identifier}",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.{part}"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": {enchantable},
+				"slot": "{slotEnch}"
+			},
+			"minecraft:durability": {
+				"max_durability": {durability},
+				"damage_chance": {
+					"min": 100,
+					"max": 100
+				}
+			},
+			"minecraft:icon": "{icon}",
+			"minecraft:wearable": {
+				"slot": "slot.armor.{slot}",
+				"protection": {protection}
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"{repairItem}"
+						],
+						"repair_amount": "query.max_durability * 0.25"
+					},
+					{
+						"items": [
+							"{identifier}"
+						],
+						"repair_amount": "context.other->query.remaining_durability + 0.12 * context.other->query.max_durability"
+					}
+				]
+			}
+		}
+	}
+}

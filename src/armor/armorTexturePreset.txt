@@ -1,0 +1,25 @@
+{
+	"format_version": "{formatVersion}",
+	"minecraft:attachable": {
+		"description": {
+			"identifier": "{identifier}",
+			"materials": {
+				"default": "armor",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"default": "textures/models/armor/{layer}",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+				"default": "geometry.humanoid.armor.{geometry}"
+			},
+			"scripts": {
+				"parent_setup": "variable.{parentSetup}_layer_visible = 0.0;"
+			},
+			"render_controllers": [
+				"controller.render.armor"
+			]
+		}
+	}
+}

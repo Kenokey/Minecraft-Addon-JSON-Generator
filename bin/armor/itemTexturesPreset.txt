@@ -1,0 +1,18 @@
+{
+	"resource_pack_name": "YOURTEXTUREPACK",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"{modName}_{material}_helmet": {
+			"textures": "textures/items/{material}_helmet"
+		},
+		"{modName}_{material}_chestplate": {
+			"textures": "textures/items/{material}_chestplate"
+		},
+		"{modName}_{material}_leggings": {
+			"textures": "textures/items/{material}_leggings"
+		},
+		"{modName}_{material}_boots": {
+			"textures": "textures/items/{material}_boots"
+		}
+	}
+}
